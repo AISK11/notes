@@ -1,0 +1,3 @@
+# Notes
+
+*- personal knowledge base.*
