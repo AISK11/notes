@@ -36,7 +36,7 @@
 
 ### Hash Cracking
 
-1. Crack:
+1. Choose crack method:
     - [Rule attack](https://hashcat.net/wiki/doku.php?id=rule_based_attack):
         | Example | Description |  Input   | Output     |
         |:--------|:------------|:---------|:-----------|
