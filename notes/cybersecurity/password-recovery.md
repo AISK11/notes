@@ -2,26 +2,14 @@
 
 *- hash reversal.*
 
+## Setup
+
+1. Check available backend devices:
+    ```sh
+    hashcat -I
+    ```
+
 ## Cracking
-
-### Hash Extraction
-
-- 7z:
-    ```sh
-    7z2john <FILE> 2> /dev/null | cut -d ';' -f 2-
-    ```
-- PDF:
-    ```sh
-    pdf2john <FILE> 2> /dev/null | cut -d ';' -f 2-
-    ```
-- RAR
-    ```sh
-    rar2john <FILE> 2> /dev/null | cut -d ';' -f 2-
-    ```
-- ZIP:
-    ```sh
-    zip2john <FILE> 2> /dev/null | cut -d ';' -f 2-
-    ```
 
 ### Hash Identification
 
@@ -81,7 +69,6 @@
 ### Tools
 
 - [hashcat](https://github.com/hashcat/hashcat/)
-- [john](https://github.com/openwall/john/)
 
 ### Wordlists
 
