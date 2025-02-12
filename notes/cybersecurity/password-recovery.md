@@ -43,14 +43,14 @@
         hashcat -0 -a 1 -m <HASH-TYPE> <HASH> -j ':' <WORDLIST1> -k ':' <WORDLIST2>
         ```
     - [Mask attack](https://hashcat.net/wiki/doku.php?id=mask_attack):
-        | ?    | Charset    |
-        |:-----|:-----------|
-        | `?l` | a..z       |
-        | `?u` | A..Z       |
-        | `?d` | 0..9       |
-        | `?s` | special    |
-        | `?a` | ?l?u?d?s   |
-        | `?b` | 0x00..0xff |
+        | ?    | Charset                                  |
+        |:-----|:-----------------------------------------|
+        | `?l` | a..z                                     |
+        | `?u` | A..Z                                     |
+        | `?d` | 0..9                                     |
+        | `?s` | &nbsp;!"#$%&'()*+,-./:;<=>?@[\\]^_`{\|}~ |
+        | `?a` | ?l?u?d?s                                 |
+        | `?b` | 0x00..0xff                               |
         ```sh
         hashcat -O -a 3 -m <HASH-TYPE> <HASH> -1 ?l?u?d -i --increment-min 1 --increment-max 8 <MASK>
         ```
