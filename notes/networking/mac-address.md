@@ -4,7 +4,14 @@
 
 ## Theory
 
-- MAC address format: `XN:XX:XX:XX:XX:XX`
+- MAC address format:
+    ```text
+             +- Network Interface controller (NIC) specific
+             |
+    +- Organisationally Unique Identifier (OUI)
+    |        |
+    XN:XX:XX:XX:XX:XX
+    ```
     | Description               | Address           |
     |:--------------------------|:------------------|
     | Unicast (manufacturer)    | N = [0, 4, 8, C]  |
