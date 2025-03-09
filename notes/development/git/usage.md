@@ -55,3 +55,12 @@
     ```sh
     git pull
     ```
+
+## Misc
+
+- Merge all commits to one:
+	```sh
+	git checkout --orphan new-main main
+	git commit -m '<MESSAGE>'
+	git branch -M new-main main
+	```
