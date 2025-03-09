@@ -9,3 +9,4 @@
     1. [Usage](usage.md)
 1. Git platforms:
     - [GitHub](github.md)
+	- [GitLab](gitlab.md)
